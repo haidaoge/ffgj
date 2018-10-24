@@ -8,7 +8,8 @@ module.exports = {
   // webpack-dev-server 相关配置
   devServer: {
     open: process.platform === 'darwin',
-    host: '0.0.0.0',
+    host: '192.168.1.105',
+    // host: '0.0.0.0',
     port: 8001,
     https: false,
     hotOnly: false,

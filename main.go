@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	beego.BConfig.WebConfig.StaticDir["/static"] = "static"
+	// beego.BConfig.WebConfig.StaticDir["/static"] = "static"
 	beego.InsertFilter("/", beego.BeforeRouter, TransparentStatic)
 	beego.InsertFilter("/*", beego.BeforeRouter, TransparentStatic)
 
